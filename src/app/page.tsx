@@ -104,6 +104,7 @@ export default function LandingPage() {
           imageAlt="Watch Craftsmanship"
           useInvertedBackground={false}
           mediaAnimation="slide-up"
+          metricsAnimation="slide-up"
         />
       </div>
 
@@ -120,28 +121,22 @@ export default function LandingPage() {
           animationType="slide-up"
           testimonials={[
             {
-              id: "1",              name: "Chisom Okafor",              role: "CEO",              company: "Tech Innovation Ltd",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/portrait-grey-haired-businessman-standing_74855-10324.jpg",              imageAlt: "Chisom Okafor"
+              id: "1",              name: "Chisom Okafor",              role: "CEO",              company: "Tech Innovation Ltd",              rating: 5,              imageSrc: "http://img.b2bpic.net/free-photo/portrait-grey-haired-businessman-standing_74855-10324.jpg",              imageAlt: "Chisom Okafor"
             },
             {
-              id: "2",              name: "Amara Johnson",              role: "Entrepreneur",              company: "Fashion Collective",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/empowered-business-woman-working-city_23-2149322942.jpg",              imageAlt: "Amara Johnson"
+              id: "2",              name: "Amara Johnson",              role: "Entrepreneur",              company: "Fashion Collective",              rating: 5,              imageSrc: "http://img.b2bpic.net/free-photo/empowered-business-woman-working-city_23-2149322942.jpg",              imageAlt: "Amara Johnson"
             },
             {
-              id: "3",              name: "Adebayo Adeleke",              role: "Investment Manager",              company: "Apex Capital",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/young-businessman-happy-expression_1194-1641.jpg",              imageAlt: "Adebayo Adeleke"
+              id: "3",              name: "Adebayo Adeleke",              role: "Investment Manager",              company: "Apex Capital",              rating: 5,              imageSrc: "http://img.b2bpic.net/free-photo/young-businessman-happy-expression_1194-1641.jpg",              imageAlt: "Adebayo Adeleke"
             },
             {
-              id: "4",              name: "Tunde Oluwaseun",              role: "Business Executive",              company: "Global Ventures",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/cheerful-employee-with-crossed-arms_1098-3148.jpg",              imageAlt: "Tunde Oluwaseun"
+              id: "4",              name: "Tunde Oluwaseun",              role: "Business Executive",              company: "Global Ventures",              rating: 5,              imageSrc: "http://img.b2bpic.net/free-photo/cheerful-employee-with-crossed-arms_1098-3148.jpg",              imageAlt: "Tunde Oluwaseun"
             },
             {
-              id: "5",              name: "Ngozi Emeka",              role: "Consultant",              company: "Strategic Solutions",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/young-businessman-happy-expression_1194-1651.jpg",              imageAlt: "Ngozi Emeka"
+              id: "5",              name: "Ngozi Emeka",              role: "Consultant",              company: "Strategic Solutions",              rating: 5,              imageSrc: "http://img.b2bpic.net/free-photo/young-businessman-happy-expression_1194-1651.jpg",              imageAlt: "Ngozi Emeka"
             },
             {
-              id: "6",              name: "Ibrahim Hassan",              role: "Director",              company: "Premium Lifestyle",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/smiley-businesswoman-using-sign-language-outdoors-work_23-2148740316.jpg",              imageAlt: "Ibrahim Hassan"
+              id: "6",              name: "Ibrahim Hassan",              role: "Director",              company: "Premium Lifestyle",              rating: 5,              imageSrc: "http://img.b2bpic.net/free-photo/smiley-businesswoman-using-sign-language-outdoors-work_23-2148740316.jpg",              imageAlt: "Ibrahim Hassan"
             }
           ]}
           buttonAnimation="slide-up"
@@ -157,7 +152,7 @@ export default function LandingPage() {
           description="Subscribe to our newsletter and be the first to know about our latest luxury collections, exclusive deals, and special events. Join our community of watch enthusiasts across Nigeria."
           background={{ variant: "sparkles-gradient" }}
           useInvertedBackground={false}
-          imageSrc="http://img.b2bpic.net/free-photo/businessman-checking-time-hand-watch_53876-20480.jpg?_wi=1"
+          imageSrc="http://img.b2bpic.net/free-photo/businessman-checking-time-hand-watch_53876-20480.jpg"
           imageAlt="Luxury Watch Collection"
           mediaAnimation="slide-up"
           mediaPosition="right"
@@ -169,7 +164,7 @@ export default function LandingPage() {
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="http://img.b2bpic.net/free-photo/businessman-checking-time-hand-watch_53876-20480.jpg?_wi=2"
+          imageSrc="http://img.b2bpic.net/free-photo/businessman-checking-time-hand-watch_53876-20480.jpg"
           imageAlt="Luxury Watches Collection"
           logoText="Royal Wrist"
           copyrightText="© 2025 Royal Wrist NG. All rights reserved."
