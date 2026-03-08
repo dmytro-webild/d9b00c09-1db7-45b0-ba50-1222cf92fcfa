@@ -4,11 +4,11 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
 import ProductCardTwo from '@/components/sections/product/ProductCardTwo';
-import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
-import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
-import ContactSplit from '@/components/sections/contact/ContactSplit';
-import FooterMedia from '@/components/sections/footer/FooterMedia';
-import { Sparkles, Award, Clock, Star, Mail } from 'lucide-react';
+import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
+import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
+import ContactCTA from '@/components/sections/contact/ContactCTA';
+import FooterSimple from '@/components/sections/footer/FooterSimple';
+import { Sparkles, Award, Crown, Zap, Mail } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -90,67 +90,53 @@ export default function LandingPage() {
       </div>
 
       <div id="about" data-section="about">
-        <MetricSplitMediaAbout
-          tag="Our Heritage"
-          tagIcon={Clock}
-          tagAnimation="slide-up"
+        <TextSplitAbout
           title="Craftsmanship Meets Innovation"
-          description="Royal Wrist stands as a beacon of luxury in Nigeria's watch market. For over a decade, we have curated the finest timepieces from master watchmakers across Switzerland and Europe. Each watch in our collection represents generations of expertise, precision engineering, and an unwavering commitment to excellence. We believe that a luxury watch is not merely an accessory—it is a statement of taste, a symbol of achievement, and an investment in timeless elegance."
-          metrics={[
-            { value: "15+", title: "Years of Excellence" },
-            { value: "500+", title: "Satisfied Clients" }
+          description={[
+            "Royal Wrist stands as a beacon of luxury in Nigeria's watch market. For over a decade, we have curated the finest timepieces from master watchmakers across Switzerland and Europe.",            "Each watch in our collection represents generations of expertise, precision engineering, and an unwavering commitment to excellence. We believe that a luxury watch is not merely an accessory—it is a statement of taste, a symbol of achievement, and an investment in timeless elegance."
           ]}
-          imageSrc="http://img.b2bpic.net/free-photo/craftswoman-working-workshop_107420-65276.jpg"
-          imageAlt="Watch Craftsmanship"
           useInvertedBackground={false}
-          mediaAnimation="slide-up"
-          metricsAnimation="slide-up"
-        />
-      </div>
-
-      <div id="testimonials" data-section="testimonials">
-        <TestimonialCardOne
-          title="Loved by Discerning Customers"
-          description="Hear from our clients who have chosen Royal Wrist for their most cherished timepieces"
-          tag="Testimonials"
-          tagIcon={Star}
-          tagAnimation="slide-up"
-          textboxLayout="default"
-          useInvertedBackground={false}
-          gridVariant="uniform-all-items-equal"
-          animationType="slide-up"
-          testimonials={[
-            {
-              id: "1",              name: "Chisom Okafor",              role: "CEO",              company: "Tech Innovation Ltd",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/portrait-grey-haired-businessman-standing_74855-10324.jpg",              imageAlt: "Chisom Okafor"
-            },
-            {
-              id: "2",              name: "Amara Johnson",              role: "Entrepreneur",              company: "Fashion Collective",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/empowered-business-woman-working-city_23-2149322942.jpg",              imageAlt: "Amara Johnson"
-            },
-            {
-              id: "3",              name: "Adebayo Adeleke",              role: "Investment Manager",              company: "Apex Capital",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/young-businessman-happy-expression_1194-1641.jpg",              imageAlt: "Adebayo Adeleke"
-            },
-            {
-              id: "4",              name: "Tunde Oluwaseun",              role: "Business Executive",              company: "Global Ventures",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/cheerful-employee-with-crossed-arms_1098-3148.jpg",              imageAlt: "Tunde Oluwaseun"
-            },
-            {
-              id: "5",              name: "Ngozi Emeka",              role: "Consultant",              company: "Strategic Solutions",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/young-businessman-happy-expression_1194-1651.jpg",              imageAlt: "Ngozi Emeka"
-            },
-            {
-              id: "6",              name: "Ibrahim Hassan",              role: "Director",              company: "Premium Lifestyle",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/smiley-businesswoman-using-sign-language-outdoors-work_23-2148740316.jpg",              imageAlt: "Ibrahim Hassan"
-            }
+          showBorder={true}
+          buttons={[
+            { text: "Explore Heritage", href: "#products" },
+            { text: "View Collection", href: "#products" }
           ]}
           buttonAnimation="slide-up"
         />
       </div>
 
+      <div id="testimonials" data-section="testimonials">
+        <TestimonialCardTwelve
+          testimonials={[
+            {
+              id: "1",              name: "Chisom Okafor",              imageSrc: "http://img.b2bpic.net/free-photo/portrait-grey-haired-businessman-standing_74855-10324.jpg",              imageAlt: "Chisom Okafor"
+            },
+            {
+              id: "2",              name: "Amara Johnson",              imageSrc: "http://img.b2bpic.net/free-photo/empowered-business-woman-working-city_23-2149322942.jpg",              imageAlt: "Amara Johnson"
+            },
+            {
+              id: "3",              name: "Adebayo Adeleke",              imageSrc: "http://img.b2bpic.net/free-photo/young-businessman-happy-expression_1194-1641.jpg",              imageAlt: "Adebayo Adeleke"
+            },
+            {
+              id: "4",              name: "Tunde Oluwaseun",              imageSrc: "http://img.b2bpic.net/free-photo/cheerful-employee-with-crossed-arms_1098-3148.jpg",              imageAlt: "Tunde Oluwaseun"
+            },
+            {
+              id: "5",              name: "Ngozi Emeka",              imageSrc: "http://img.b2bpic.net/free-photo/young-businessman-happy-expression_1194-1651.jpg",              imageAlt: "Ngozi Emeka"
+            },
+            {
+              id: "6",              name: "Ibrahim Hassan",              imageSrc: "http://img.b2bpic.net/free-photo/smiley-businesswoman-using-sign-language-outdoors-work_23-2148740316.jpg",              imageAlt: "Ibrahim Hassan"
+            }
+          ]}
+          cardTitle="Premium luxury watches trusted by over 500+ satisfied clients worldwide"
+          cardTag="Join Our Community"
+          cardTagIcon={Crown}
+          cardAnimation="slide-up"
+          useInvertedBackground={false}
+        />
+      </div>
+
       <div id="contact" data-section="contact">
-        <ContactSplit
+        <ContactCTA
           tag="Stay Connected"
           tagIcon={Mail}
           tagAnimation="slide-up"
@@ -158,22 +144,16 @@ export default function LandingPage() {
           description="Subscribe to our newsletter and be the first to know about our latest luxury collections, exclusive deals, and special events. Join our community of watch enthusiasts across Nigeria."
           background={{ variant: "sparkles-gradient" }}
           useInvertedBackground={false}
-          imageSrc="http://img.b2bpic.net/free-photo/businessman-checking-time-hand-watch_53876-20480.jpg?_wi=1"
-          imageAlt="Luxury Watch Collection"
-          mediaAnimation="slide-up"
-          mediaPosition="right"
-          inputPlaceholder="your@email.com"
-          buttonText="Subscribe"
-          termsText="We respect your privacy. Unsubscribe anytime."
+          buttons={[
+            { text: "Subscribe Now", href: "#contact" },
+            { text: "Learn More", href: "#about" }
+          ]}
+          buttonAnimation="slide-up"
         />
       </div>
 
       <div id="footer" data-section="footer">
-        <FooterMedia
-          imageSrc="http://img.b2bpic.net/free-photo/businessman-checking-time-hand-watch_53876-20480.jpg?_wi=2"
-          imageAlt="Luxury Watches Collection"
-          logoText="Royal Wrist"
-          copyrightText="© 2025 Royal Wrist NG. All rights reserved."
+        <FooterSimple
           columns={[
             {
               title: "Shop",              items: [
@@ -197,6 +177,8 @@ export default function LandingPage() {
               ]
             }
           ]}
+          bottomLeftText="© 2025 Royal Wrist NG. All rights reserved."
+          bottomRightText="Premium Luxury Watches Since 2010"
         />
       </div>
     </ThemeProvider>
