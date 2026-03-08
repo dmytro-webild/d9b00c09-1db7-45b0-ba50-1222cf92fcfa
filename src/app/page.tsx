@@ -152,7 +152,7 @@ export default function LandingPage() {
           description="Subscribe to our newsletter and be the first to know about our latest luxury collections, exclusive deals, and special events. Join our community of watch enthusiasts across Nigeria."
           background={{ variant: "sparkles-gradient" }}
           useInvertedBackground={false}
-          imageSrc="http://img.b2bpic.net/free-photo/businessman-checking-time-hand-watch_53876-20480.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/businessman-checking-time-hand-watch_53876-20480.jpg?_wi=1"
           imageAlt="Luxury Watch Collection"
           mediaAnimation="slide-up"
           mediaPosition="right"
@@ -164,7 +164,7 @@ export default function LandingPage() {
 
       <div id="footer" data-section="footer">
         <FooterMedia
-          imageSrc="http://img.b2bpic.net/free-photo/businessman-checking-time-hand-watch_53876-20480.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/businessman-checking-time-hand-watch_53876-20480.jpg?_wi=2"
           imageAlt="Luxury Watches Collection"
           logoText="Royal Wrist"
           copyrightText="© 2025 Royal Wrist NG. All rights reserved."
