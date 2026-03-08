@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
 import "./globals.css";
-import { ServiceWrapper } from "@/providers/serviceWrapper/ServiceWrapper";
-import { Tag } from "@/components/tag";
 
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",  subsets: ["latin"],
@@ -20,10 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${interTight.variable}`}>
-        <ServiceWrapper>
-          <Tag />
-          {children}
-        </ServiceWrapper>
+        {children}
       
         <script
           dangerouslySetInnerHTML={{
