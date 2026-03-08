@@ -104,6 +104,7 @@ export default function LandingPage() {
           imageAlt="Watch Craftsmanship"
           useInvertedBackground={false}
           mediaAnimation="slide-up"
+          metricsAnimation="slide-up"
         />
       </div>
 
